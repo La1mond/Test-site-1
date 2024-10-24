@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продажа Видеооборудования</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Видеооборудование Будущего</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Главная</a>
+        <a href="#about">О нас</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <div class="hero-text">
+            <h2>Будущее видео начинается здесь</h2>
+            <p>Премиальное оборудование для профессионалов</p>
+            <a href="#catalog" class="btn-primary">Смотреть каталог</a>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Мы — ведущий поставщик видеооборудования для профессионалов. Наша компания уже более 10 лет занимается продажей только проверенного и качественного оборудования для создания видео любого уровня сложности.</p>
+    </section>
+
+    <section id="catalog">
+        <h2>Наши Продукты</h2>
+        <div class="products">
+            <div class="product">
+                <img src="camera1.jpg" alt="Камера 1">
+                <h3>Профессиональная камера</h3>
+                <p>Высокое разрешение и отличное качество съемки.</p>
+                <p class="price">150 000 ₽</p>
+            </div>
+
+            <div class="product">
+                <img src="camera2.jpg" alt="Камера 2">
+                <h3>4K Видеокамера</h3>
+                <p>Идеальна для съемки видео в 4K качестве.</p>
+                <p class="price">200 000 ₽</p>
+            </div>
+
+            <div class="product">
+                <img src="camera3.jpg" alt="Камера 3">
+                <h3>Экшн-камера</h3>
+                <p>Идеально подходит для экстремальных съемок.</p>
+                <p class="price">50 000 ₽</p>
+            </div>
+
+            <div class="product">
+                <img src="camera4.jpg" alt="Камера 4">
+                <h3>Штатив для профессионалов</h3>
+                <p>Надежная поддержка для камер любого уровня.</p>
+                <p class="price">25 000 ₽</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок Контакты -->
+    <section id="contacts">
+        <h2>Контакты</h2>
+        <p>Адрес: Москва, ул. Ленина, д. 1</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+        <p>Email: info@videoequipment.ru</p>
+        
+        <!-- Вставка карты Google Maps -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.305026228518!2d37.61842311593121!3d55.751244999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a5a5a5a5b%3A0x0!2zNTXCsDQ1JzA0LjUiTiAzN8KwMzcnMTIuOCJF!5e0!3m2!1sru!2sru!4v1635777749633!5m2!1sru!2sru" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    </footer>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+    
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
+    <footer>
+        <p>© 2024 Видеооборудование. Все права защищены.</p>
+        <div class="social-icons">
+            <a href="https://vk.com" target="_blank"><img src="vk-icon.png" alt="VK"></a>
+            <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+</body>
+</html>
